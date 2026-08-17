@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazing Shakes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- PAGE LOAD ANIMATION -->
+
+    <div class="pull-screen" id="pullScreen">
+
+        <div class="pull-text">
+            ᴀᴍᴀᴢɪɴɢ ꜱʜᴀᴋᴇꜱ
+        </div>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            Amazing Shakes
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                WELCOME TO AMAZING SHAKES
+            </p>
+
+            <h1>
+                Sip. Smile.<br>
+                Repeat.
+            </h1>
+
+            <p>
+                Freshly made shakes, refreshing drinks and warm chai —
+                made to brighten your day.
+            </p>
+
+            <a href="#menu" class="menu-button">
+                View Our Menu
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=80"
+                alt="Shake">
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="menu" id="menu">
+
+        <p class="small-title">
+            OUR MENU
+        </p>
+
+        <h2>
+            Something For Everyone
+        </h2>
+
+
+        <div class="menu-container">
+
+
+            <!-- CHOCOLATE SHAKE -->
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=700&q=80"
+                    alt="Chocolate Shake">
+
+                <h3>
+                    Chocolate Shake
+                </h3>
+
+                <p>
+                    Rich, creamy and chocolatey.
+                </p>
+
+                <strong>
+                    ₹90
+                </strong>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="buy-button"
+                        onclick="buyNow('Chocolate Shake', 90)">
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="cart-button"
+                        onclick="addToCart('Chocolate Shake', 90)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- STRAWBERRY SHAKE -->
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=700&q=80"
+                    alt="Strawberry Shake">
+
+                <h3>
+                    Strawberry Shake
+                </h3>
+
+                <p>
+                    Fresh strawberries blended perfectly.
+                </p>
+
+                <strong>
+                    ₹100
+                </strong>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="buy-button"
+                        onclick="buyNow('Strawberry Shake', 100)">
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="cart-button"
+                        onclick="addToCart('Strawberry Shake', 100)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- VANILLA SHAKE -->
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80"
+                    alt="Vanilla Shake">
+
+                <h3>
+                    Vanilla Shake
+                </h3>
+
+                <p>
+                    Classic, smooth and delicious.
+                </p>
+
+                <strong>
+                    ₹100
+                </strong>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="buy-button"
+                        onclick="buyNow('Vanilla Shake', 100)">
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="cart-button"
+                        onclick="addToCart('Vanilla Shake', 100)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FARMHOUSE PIZZA -->
+
+            <div class="card">
+
+                <img
+                    src="images/pizza.jpg"
+                    alt="Farmhouse Pizza">
+
+                <h3>
+                    Farmhouse Pizza
+                </h3>
+
+                <p>
+                    Fresh vegetables, cheese and delicious toppings.
+                </p>
+
+                <strong>
+                    Regular — ₹140
+                </strong>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="buy-button"
+                        onclick="buyNow('Farmhouse Pizza - Regular', 140)">
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="cart-button"
+                        onclick="addToCart('Farmhouse Pizza - Regular', 140)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASSIC BURGER -->
+
+            <div class="card">
+
+                <img
+                    src="images/burger.jpg"
+                    alt="Classic Burger">
+
+                <h3>
+                    Classic Burger
+                </h3>
+
+                <p>
+                    Juicy burger with fresh vegetables and delicious sauce.
+                </p>
+
+                <strong>
+                    ₹120
+                </strong>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="buy-button"
+                        onclick="openBurgerOptions('buy')">
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="cart-button"
+                        onclick="openBurgerOptions('cart')">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADRAK CHAI -->
+
+            <div class="card">
+
+                <img
+                    src="images/chai.jpg"
+                    alt="Adrak Chai">
+
+                <h3>
+                    Adrak Chai
+                </h3>
+
+                <p>
+                    Warm and refreshing ginger tea.
+                </p>
+
+                <strong>
+                    ₹30
+                </strong>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="buy-button"
+                        onclick="buyNow('Adrak Chai', 30)">
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="cart-button"
+                        onclick="addToCart('Adrak Chai', 30)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BURGER OPTIONS -->
+
+    <div
+        class="payment-overlay"
+        id="burgerOptionsOverlay">
+
+        <div class="payment-box">
+
+            <button
+                class="payment-close"
+                onclick="closeBurgerOptions()">
+                ×
+            </button>
+
+            <p class="small-title">
+                CUSTOMIZE YOUR BURGER
+            </p>
+
+            <h2>
+                Classic Burger
+            </h2>
+
+            <div class="payment-product">
+                Choose your cheese option
+            </div>
+
+
+            <!-- NO CHEESE -->
+
+            <button
+                class="payment-option"
+                onclick="selectBurgerCheese(false)">
+
+                <div class="payment-option-icon">
+                    NO
+                </div>
+
+                <div>
+
+                    <strong>
+                        No Cheese
+                    </strong>
+
+                    <span>
+                        Classic Burger — ₹120
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <!-- ADD CHEESE -->
+
+            <button
+                class="payment-option"
+                onclick="selectBurgerCheese(true)">
+
+                <div class="payment-option-icon">
+                    +
+                </div>
+
+                <div>
+
+                    <strong>
+                        Add Cheese
+                    </strong>
+
+                    <span>
+                        Extra Cheese +₹20
+                    </span>
+
+                </div>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <p class="small-title">
+            ABOUT US
+        </p>
+
+        <h2>
+            Made Fresh. Made With Love.
+        </h2>
+
+        <p>
+            Amazing Shakes is a refreshing place where delicious shakes,
+            creamy flavours and warm chai come together. Every drink is
+            prepared with care using quality ingredients.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <p class="small-title">
+            COME VISIT US
+        </p>
+
+        <h2>
+            Let's Make Your Day Sweeter.
+        </h2>
+
+        <p>
+            Tanushka Nayak
+        </p>
+
+        <p>
+            Email: tanushkanayak55@gmail.com
+        </p>
+
+        <p>
+            45, City Center, Gwalior
+        </p>
+
+        <p>
+            Open Daily: 10 AM - 8 PM
+        </p>
+
+        <a
+            href="mailto:tanushkanayak55@gmail.com"
+            class="contact-button">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            Amazing Shakes
+        </h3>
+
+        <p>
+            Sip. Smile. Repeat.
+        </p>
+
+        <p>
+            Created by Tanushka Nayak
+        </p>
+
+        <p>
+            © 2026 Amazing Shakes. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- FLOATING CART BUTTON -->
+
+    <button
+        class="cart-floating-button"
+        onclick="openCart()">
+
+        Cart
+
+        <span id="cart-count">
+            0
+        </span>
+
+    </button>
+
+
+    <!-- CART OVERLAY -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        onclick="closeCart()">
+    </div>
+
+
+    <!-- CART PANEL -->
+
+    <div
+        class="cart-panel"
+        id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button
+                class="close-button"
+                onclick="closeCart()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            id="cart-items"
+            class="cart-items">
+
+            <div class="empty-cart">
+                Your cart is empty.
+            </div>
+
+        </div>
+
+
+        <div class="cart-bottom">
+
+            <div class="cart-total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong>
+                    ₹<span id="cart-total">0</span>
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-button"
+                onclick="checkoutCart()">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAYMENT -->
+
+    <div
+        class="payment-overlay"
+        id="paymentOverlay">
+
+        <div class="payment-box">
+
+            <button
+                class="payment-close"
+                onclick="closePayment()">
+                ×
+            </button>
+
+            <p class="small-title">
+                CHECKOUT
+            </p>
+
+            <h2>
+                Complete Your Order
+            </h2>
+
+            <div
+                class="payment-product"
+                id="paymentProduct">
+            </div>
+
+
+            <!-- PAYMENT OPTIONS -->
+
+            <div
+                class="payment-options"
+                id="paymentOptions">
+
+
+                <!-- UPI -->
+
+                <button
+                    class="payment-option"
+                    onclick="showPaymentForm('upi')">
+
+                    <div class="payment-option-icon">
+                        UPI
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            UPI
+                        </strong>
+
+                        <span>
+                            Google Pay, PhonePe, Paytm
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <!-- CARD -->
+
+                <button
+                    class="payment-option"
+                    onclick="showPaymentForm('card')">
+
+                    <div class="payment-option-icon">
+                        CARD
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Debit Card
+                        </strong>
+
+                        <span>
+                            Visa / Mastercard
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <!-- EMI -->
+
+                <button
+                    class="payment-option"
+                    onclick="showPaymentForm('emi')">
+
+                    <div class="payment-option-icon">
+                        EMI
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            EMI
+                        </strong>
+
+                        <span>
+                            Select your bank
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <!-- COD -->
+
+                <button
+                    class="payment-option"
+                    onclick="showPaymentForm('cod')">
+
+                    <div class="payment-option-icon">
+                        COD
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Cash on Delivery
+                        </strong>
+
+                        <span>
+                            Pay when delivered
+                        </span>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- PAYMENT FORM -->
+
+            <div
+                class="payment-form"
+                id="paymentForm">
+
+                <h3 id="formTitle">
+                    Payment Details
+                </h3>
+
+                <div id="formFields">
+                </div>
+
+                <button
+                    class="continue-payment"
+                    onclick="submitPayment()">
+
+                    Continue
+
+                </button>
+
+            </div>
+
+
+            <!-- ORDER STATUS -->
+
+            <div
+                class="order-status"
+                id="orderStatus">
+
+                <div class="loading-circle"></div>
+
+                <h3>
+                    Preparing your order...
+                </h3>
+
+                <p>
+                    Please wait a moment.
+                </p>
+
+            </div>
+
+
+            <!-- OUT OF STOCK -->
+
+            <div
+                class="stock-message"
+                id="stockMessage">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
